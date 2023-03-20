@@ -1,10 +1,9 @@
 import { FlatList, Text, TextInput, TouchableOpacity, View } from "react-native";
-import Svg, { Image } from 'react-native-svg';
 import { styles } from './styles';
 
 export function Header() {
     return (
-      <>
+      <View style={styles.conteiner}>
         <View style={styles.form}>
           <TextInput 
               style={styles.input} 
@@ -16,20 +15,26 @@ export function Header() {
               +
             </Text>
           </TouchableOpacity>
-        </View>
-        <View style={styles.list}>
-          {/* <FlatList
-            ListEmptyComponent={() => (
-              <>
-                <Text style={styles.listTitle}>Você ainda não tem tarefas cadastradas</Text>
-                <Text style={styles.listSubTitle}>Crie tarefas e organize seus itens a fazer</Text>
-              </>
-              
-            )}
-          
-          /> */}
-        </View>
-      </>
+        </View>     
+        <View style={styles.counters}>
+          <Text style={styles.create}>
+            Criadas
+          </Text>
+          <View style={styles.counter}>
+            <Text  style={styles.counterText}>
+               0
+            </Text>
+          </View>            
+          <Text style={styles.fineshed}>
+              Concluídas
+          </Text>
+          <View style={styles.counter}>
+            <Text style={styles.counterText}>
+              0
+            </Text>
+          </View> 
+        </View>        
+      </View>
         
       
     );

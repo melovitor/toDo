@@ -1,6 +1,10 @@
 import { StyleSheet } from "react-native"
 
 export const styles = StyleSheet.create({   
+    conteiner:{
+        backgroundColor: "#1A1A1A",
+    },
+
     form: {
         zIndex: 1,
         backgroundColor: '#0D0D0D',
@@ -45,4 +49,32 @@ export const styles = StyleSheet.create({
     listSubTitle: {
         color: '#808080',
     },
+    counters:{
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        marginTop: 40,
+        padding: 16,
+        borderBottomWidth: 1,
+        borderBottomColor: '#262626',
+        borderRadius: 20
+    },
+    create : {
+        fontWeight: 'bold',
+        color: '#4EA8DE',
+    },
+    fineshed : {
+        fontWeight: 'bold',
+        color: '#8284FA',
+    },
+    counter: {
+        backgroundColor: '#333333',
+        borderRadius: 9,
+        padding: 3,
+        marginLeft: -200,
+        alignItems: 'center',
+    },
+    counterText: {
+        color: '#fff',
+    }
 })
