@@ -84,7 +84,6 @@ export function Header() {
                 onConclued={() => handleTaskConclued(item)}
                 onRemove={() => handleTaskRemove(item)}
                 name={item}
-                isConclued={true}
                 />
             )}
             showsVerticalScrollIndicator={false}

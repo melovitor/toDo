@@ -5,15 +5,13 @@ type Props = {
     name: string;
     onRemove: () => void;
     onConclued: () => void;
-    isConclued: boolean;
 }
-
-export function ListCard({name, onRemove, onConclued, isConclued}: Props){
+export function ListCard({name, onRemove, onConclued}: Props){
     return(
     <View style={styles.container}>
         <View style={styles.card}>
         <TouchableOpacity onPress={onConclued}>
-            <Text style={isConclued ? styles.textConclued : styles.text}> 
+            <Text style={styles.text}> 
                 {name}
             </Text>
         </TouchableOpacity>        
