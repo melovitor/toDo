@@ -1,6 +1,5 @@
 import { StatusBar } from 'react-native';
 import { Header } from './src/screens/Header';
-import { List } from './src/components/List';
 
 export default function App() {
   return (
@@ -11,7 +10,6 @@ export default function App() {
       translucent
     />
     <Header/>
-    <List/>
   </>
   );
 }

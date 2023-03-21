@@ -38,9 +38,8 @@ export const styles = StyleSheet.create({
         fontSize: 26
     },
     list: {
-        alignItems: 'center',
-        flex: 1,
         backgroundColor: "#1A1A1A",
+        flex: 1
     },
     listTitle: {
         color: '#808080',
@@ -57,7 +56,8 @@ export const styles = StyleSheet.create({
         padding: 16,
         borderBottomWidth: 1,
         borderBottomColor: '#262626',
-        borderRadius: 20
+        borderRadius: 20,
+        marginBottom: 20
     },
     create : {
         fontWeight: 'bold',
@@ -76,5 +76,18 @@ export const styles = StyleSheet.create({
     },
     counterText: {
         color: '#fff',
-    }
+    },
+    listEmpty: {
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: 50,        
+    },
+    title: {
+        fontWeight: "bold",
+        color: "#808080"
+    },
+    subTitle: {
+        color: "#808080"
+    },
+    
 })
